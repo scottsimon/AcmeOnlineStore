@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": "66a51a6eb5cd43128bde86ad87cae54c",
+      "name": "MacBook Pro (13-inch)",
+      "description": "Apple MacBook Pro MF839LL/A 13.3-Inch Laptop with Retina Display (2.7 GHz Intel Core i5 Processor, 8 GB RAM, 128 GB Hard Drive, OS X Yosemite)",
+      "fullDescription": "Just when you thought your MacBook Pro was state of the art, Apple introduces the MF839LL/A 13-inch MacBook Pro with new advanced processing power and graphics. New connectivity capabilities potentially speed large file transfers beyond any current connection. All MacBook Pro models are state-of-the-art. This new one takes it out to another edge. New Thunderbolt technology lets you connect high-performance peripherals and high-resolution displays to one port - with data transfer rates up to 10 Gbps. Thunderbolt is based on two fundamental technologies: PCI Express and DisplayPort. And because Thunderbolt is based on DisplayPort technology, the video standard for high-resolution displays, any Mini DisplayPort display plugs right into the Thunderbolt port. To connect a DisplayPort, DVI, HDMI, or VGA display, just use an existing optional adapter. Take everything from games to CAD to HD video projects anywhere. Time makes full-screen HD video calls that are astonishingly crisp. And thanks to the new widescreen format, you can get your friends in the picture, too. And with Mac OS X El Capitan and the latest iLife, you're sure to get a great Mac notebook - all in a precision aluminum unibody enclosure that's less than an inch thin.",
+      "price": 1499,
+      "rating": 4.5,
+      "seller": "Apple",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStGxGdj1QK5WSb5LIQuc49fvh4UMz2Kbj5sw&usqp=CAU"
+    },
+    {
+      "id": "f2def451834b4f239a0d48a91cfff5a6",
+      "name": "MacBook Pro (15-inch)",
+      "description": "Apple Macbook Pro MJLQ2LL/A 15-inch Laptop (2.2 GHz Intel Core i7 Processor, 16GB RAM, 256 GB Hard Drive, Mac OS X)",
+      "fullDescription": "Introducing the new 15.4-inch MacBook Pro. The state-of-the-art quad-core Intel i7 processor delivers up to 2x faster performance (over the previous generation of MacBook Pro). New Thunderbolt technology lets you connect high-performance peripherals and high-resolution displays to a single port, and transfer files at lightning speeds. And with the new built-in FaceTime HD camera, you can make astonishingly crisp HD video calls. With the revolutionary Thunderbolt technology, you'll be able to achieve bi-directional channels with transfer speeds to peripherals like external hard drives and servers up to an amazing 10 Gbps--while also connecting to a DisplayPort-compatible high-resolution display.",
+      "price": 1799,
+      "rating": 4,
+      "seller": "Apple",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4QI4RlgMX2Lltrs-pwpisSiLJSoj53hmn6Q&usqp=CAU"
+    },
+    {
+      "id": "50ec26a6b3fd4a7984ff9db14131c5d6",
+      "name": "MacBook Air (11-inch)",
+      "description": "Apple MacBook Air MJVM2LL/A 11.6-Inch laptop (1.6 GHz Intel i5, 128 GB SSD, Integrated Intel HD Graphics 6000, Mac OS X Yosemite)",
+      "fullDescription": "1.6GHz dual-core Intel Core i5 processor Turbo Boost up to 2.7GHz Intel HD Graphics 6000 4GB memory 128GB PCIe-based flash storage",
+      "price": 999,
+      "rating": 3.5,
+      "seller": "Apple",
+      "thumbnail": "https://www.notebookcheck.net/typo3temp/_processed_/5/9/csm_4zu3MacBook_edee8b61f8.jpg"
+    },
+    {
+      "id": "694358fdde494e128bc053d800e2fd15",
+      "name": "MacBook Air (13-inch)",
+      "description": "Apple MMGF2LL/A MacBook Air 13.3-Inch Laptop (8GB RAM 128 GB SSD) MMGF2 NEWEST VERSION",
+      "fullDescription": "1.6 GHz dual-core Intel Core i5 (Turbo Boost up to 2.7 GHz) with 3 MB shared L3 cache 8 GB of 1600 MHz LPDDR3 RAM; 128 GB PCIe-based flash storage 13.3-Inch (diagonal) LED-backlit Glossy Widescreen Display, 1440 x 900 resolution Intel HD Graphics 6000 OS X El Capitan, Up to 12 Hours of Battery Life Macbook Air does not have a Retina display on any model.",
+      "price": 1199,
+      "rating": 4,
+      "seller": "Apple",
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-config-201810?wid=539&hei=312&fmt=jpeg&qlt=95&.v=1603332211000"
+    },
+    {
+      "id": "bc4a2f7359d34d5eb217e1c913c52688",
+      "name": "TRS-80",
+      "description": "TRS-80 Micro Computer System",
+      "fullDescription": "The TRS-80 Micro Computer System (TRS-80; later known as the Model I to distinguish it from successors) is a desktop microcomputer launched in 1977 and sold by Tandy Corporation through their Radio Shack stores. The name is an abbreviation of Tandy/Radio Shack, Z-80 microprocessor.",
+      "price": 299,
+      "rating": 1.5,
+      "seller": "Tandy",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Radioshack_TRS80-IMG_7206.jpg/1280px-Radioshack_TRS80-IMG_7206.jpg"
+    },
+    {
+      "id": "02107365570f4d8b8686ab3bb6cb2129",
+      "name": "Atari 800",
+      "description": "Atari 800",
+      "fullDescription": "The Atari 8-bit family is a series of 8-bit home computers introduced by Atari, Inc. in 1979 [1] and manufactured until 1992. All of the machines in the family are similar and differ primarily in packaging. They are based on the MOS Technology 6502 CPU running at 1.79 MHz,[a] roughly twice that of similar designs, and were the first home computers designed with custom co-processor chips.",
+      "price": 249,
+      "rating": 2.25,
+      "seller": "Atari",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Atari_800.jpg/300px-Atari_800.jpg"
+    },
+    {
+      "id": "618d45f8204c4c7082333b6f3b1a705a",
+      "name": "Commodore 64",
+      "description": "Commodore 64 (C64)",
+      "fullDescription": "The Commodore 64, also known as the C64, C-64, C= 64,[n 1] or occasionally CBM 64 or VIC-64 in Sweden,[5] is an 8-bit home computer introduced in January 1982 by Commodore International. It is listed in the Guinness World Records as the highest-selling single computer model of all time,[6] with independent estimates placing the number sold between 10 and 17 million units.[7] Volume production started in early 1982, marketing in August for US$595 (equivalent to $1,461 in 2015).[8][9] Preceded by the Commodore VIC-20 and Commodore PET, the C64 took its name from its 64 kilobytes (65,536 bytes) of RAM. It had superior sound and graphical specifications compared to other earlier systems such as the Apple II and Atari 800, with multi-color sprites and a more advanced sound processor.",
+      "price": 225,
+      "rating": 3,
+      "seller": "Commodore Business Machines",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Commodore-64-Computer-FL.jpg/300px-Commodore-64-Computer-FL.jpg"
+    },
+    {
+      "id": "e8d8adcac1ac4a39aa3c5baa46b3c14d",
+      "name": "Apple IIe",
+      "description": "Apple IIe",
+      "fullDescription": "The Apple IIe (styled as Apple //e) is the third model in the Apple II series of personal computers produced by Apple Computer. The e in the name stands for enhanced, referring to the fact that several popular features were now built-in that were available only as upgrades or add-ons in earlier models. It also improved upon expandability and added a few new features, which, all combined, made it very attractive to first-time computer shoppers as a general-purpose machine. The Apple IIe has the distinction of being the longest-lived computer in Apple's history, having been manufactured and sold for nearly 11 years with relatively few changes.",
+      "price": 399.99,
+      "rating": 3.5,
+      "seller": "Apple",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Apple_IIe.jpg/300px-Apple_IIe.jpg"
+    },
+    {
+      "id": "cf94a9c31ea84f938b08768461618d79",
+      "name": "Macintosh Classic",
+      "description": "Macintosh Classic",
+      "fullDescription": "The Macintosh Classic is a personal computer manufactured by Apple Inc.. Introduced on October 15, 1990, it was the first Apple Macintosh to sell for less than US$1,000.[2] Production of the Classic was prompted by the success of the Macintosh Plus and the Macintosh SE. The system specifications of the Classic were very similar to its predecessors, with the same 9-inch (23 cm) monochrome CRT display, 512×342 pixel resolution, and 4 megabyte (MB) memory limit of the older Macintosh computers.[1][3] Apple's decision to not update the Classic with newer technology such as a 68010 CPU, higher RAM capacity or color display ensured compatibility with the Mac's by-then healthy software base as well as enabled it to fit the lower price Apple intended for it. Nevertheless, the Classic featured several improvements over the aging Macintosh Plus, which it replaced as Apple's low-end Mac computer. It was up to 25 percent faster than the Plus and included an Apple SuperDrive 3.5-inch (9 cm) floppy disk drive as standard.",
+      "price": 999.99,
+      "rating": 4.75,
+      "seller": "Apple",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Macintosh_classic.jpg/300px-Macintosh_classic.jpg"
+    }
+  ]
+}
