@@ -1,11 +1,15 @@
 package com.example.acmeonlinestore.ui.main
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.example.acmeonlinestore.databinding.MainFragmentBinding
+import com.example.acmeonlinestore.models.Product
+import com.example.acmeonlinestore.ui.RecyclerViewAdapter
+import com.example.acmeonlinestore.BR
 import com.example.acmeonlinestore.R
 
 class MainFragment : Fragment() {
@@ -14,19 +18,30 @@ class MainFragment : Fragment() {
     fun newInstance() = MainFragment()
   }
 
-  private lateinit var viewModel: MainViewModel
+  private val viewModel: MainViewModel by viewModels()
 
   override fun onCreateView(
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    return inflater.inflate(R.layout.main_fragment, container, false)
+    val binding = MainFragmentBinding.inflate(inflater, container, false)
+    binding.viewModel = viewModel
+    binding.lifecycleOwner = this
+
+    val adapter = ProductsAdapter()
+    binding.productsRecyclerview.adapter = adapter
+
+    viewModel.products.observe(viewLifecycleOwner) {
+      adapter.submitList(it.products)
+    }
+
+    return binding.root
   }
 
-  override fun onActivityCreated(savedInstanceState: Bundle?) {
-    super.onActivityCreated(savedInstanceState)
-    viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-    // TODO: Use the ViewModel
+  private inner class ProductsAdapter: RecyclerViewAdapter<Product>(this, BR.item) {
+    override fun getItemViewType(position: Int): Int {
+      return R.layout.product_summary
+    }
   }
 
 }

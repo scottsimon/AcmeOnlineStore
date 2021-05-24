@@ -1,3 +1,4 @@
 <resources>
   <string name="app_name">Acme Online Store</string>
+  <string name="product_price_format">%.2f</string>
 </resources>
