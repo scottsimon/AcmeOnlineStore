@@ -1,6 +1,7 @@
 package com.example.acmeonlinestore.ui
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -9,7 +10,13 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.CoroutineScope
 import java.security.InvalidParameterException
+
+abstract class RecyclerViewItem(val coroutineScope: CoroutineScope, val context: Context) {
+  open fun onBind() { }
+  open fun onViewRecycled() { }
+}
 
 class ItemViewHolder<T>(
   private val binding: ViewDataBinding,
@@ -38,6 +45,7 @@ abstract class RecyclerViewAdapter<T>(
 
   override fun onBindViewHolder(holder: ItemViewHolder<T>, position: Int) {
     val item = getItem(position)
+    (item as? RecyclerViewItem)?.onBind()
     holder.bind(item, dataBindingID)
   }
 
@@ -46,6 +54,7 @@ abstract class RecyclerViewAdapter<T>(
   override fun onViewRecycled(holder: ItemViewHolder<T>) {
     if (holder.bindingAdapterPosition >= 0) {
       val item = getItem(holder.bindingAdapterPosition)
+      (item as? RecyclerViewItem)?.onViewRecycled()
     }
     super.onViewRecycled(holder)
   }

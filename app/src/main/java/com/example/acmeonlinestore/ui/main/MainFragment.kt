@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import com.example.acmeonlinestore.databinding.MainFragmentBinding
 import com.example.acmeonlinestore.models.Product
 import com.example.acmeonlinestore.ui.RecyclerViewAdapter
@@ -32,13 +33,16 @@ class MainFragment : Fragment() {
     binding.productsRecyclerview.adapter = adapter
 
     viewModel.products.observe(viewLifecycleOwner) {
-      adapter.submitList(it.products)
+      val items = it.map { product ->
+        ProductItem(lifecycleScope, requireContext(), product)
+      }
+      adapter.submitList(items)
     }
 
     return binding.root
   }
 
-  private inner class ProductsAdapter: RecyclerViewAdapter<Product>(this, BR.item) {
+  private inner class ProductsAdapter: RecyclerViewAdapter<ProductItem>(this, BR.item) {
     override fun getItemViewType(position: Int): Int {
       return R.layout.product_summary
     }

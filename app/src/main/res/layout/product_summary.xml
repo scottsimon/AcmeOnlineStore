@@ -5,7 +5,7 @@
   <data>
     <variable
       name="item"
-      type="com.example.acmeonlinestore.models.Product" />
+      type="com.example.acmeonlinestore.ui.main.ProductItem" />
   </data>
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -22,7 +22,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"
-      android:src="@drawable/ic_baseline_laptop_24"
+      android:src="@{item.thumbnail}"
       tools:src="@drawable/ic_baseline_laptop_24" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -43,7 +43,7 @@
       app:layout_constraintTop_toTopOf="parent"
       android:textSize="20sp"
       android:textColor="@android:color/black"
-      android:text="@{item.name}"
+      android:text="@{item.title}"
       tools:text="Title" />
 
     <TextView
@@ -67,7 +67,7 @@
       app:layout_constraintTop_toBottomOf="@id/product_description_text_view"
       android:textSize="18sp"
       android:textColor="#FFFF0000"
-      android:text="@{ String.format(@string/product_price_format, item.price) }"
+      android:text="@{item.price}"
       tools:text="Price" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
